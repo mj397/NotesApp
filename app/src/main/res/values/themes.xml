@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="NotesAndroid" parent="Theme.Design">
+        <item name="android:background">@color/white</item>
+        <item name="actionBarSize">70dp</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+</resources>

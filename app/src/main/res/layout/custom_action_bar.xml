@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Mohamad Jamous on 24/10/2021-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <TableRow>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_back_new"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingTop="15dp"
+            android:id="@+id/action_bar_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="Notes"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@color/white"
+            />
+
+
+
+    </TableRow>
+
+</TableLayout>

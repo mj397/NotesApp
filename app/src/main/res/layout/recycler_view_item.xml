@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Mohamad Jamous on 10/11/2021-->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_views"
+    android:padding="11dp"
+    android:text="Plain Text"
+    android:textColor="@color/white"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:textSize="15sp" />

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Mohamad Jamous by 7/10/2021-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7:23 pm"
+        android:textColor="@color/grey"
+        android:textSize="13sp"
+        android:id="@+id/tv_note_time"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="6dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_view"
+        android:layout_below="@id/tv_note_time"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="16 Mar 2021"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            android:id="@+id/tv_note_date"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="6dp"
+            android:background="@android:color/transparent"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Buy tickets to Muse"
+            android:textColor="@color/shade_black"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tv_note_date"
+            android:background="@android:color/transparent"
+            android:id="@+id/tv_note_title"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text=""
+            android:textColor="@color/grey"
+            android:textSize="17sp"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:id="@+id/tv_note_content"
+            android:layout_below="@id/tv_note_title"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="12dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_box"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/light_red"
+            android:checked="false"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

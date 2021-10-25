@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Mohamad Jamous on 11/10/2021-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_close"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/action_close"
+        />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_pin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:rotation="45"
+        android:id="@+id/action_pin"
+        android:visibility="invisible"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New event"
+        android:textColorHint="@color/light_red"
+        android:layout_marginTop="60dp"
+        android:textSize="40sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/edit_subject"
+        android:inputType="textCapSentences"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Your note"
+        android:gravity="left"
+        android:textColorHint="@color/light_red"
+        android:textSize="17sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/edit_content"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:text="Tab to add or change type of content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_above="@+id/rec_content_type"
+        android:visibility="invisible"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:reverseLayout="false"
+        android:id="@+id/rec_content_type"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>
